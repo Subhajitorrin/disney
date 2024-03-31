@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Components/Header";
 import Slider from "./Components/Slider"
 import ProductionSection from "./Components/ProductionSection";
+import GeneraMovieList from "./Components/GeneraMovieList";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <Slider/>
       <ProductionSection/>
+      <GeneraMovieList/>
     </div>
   );
 }

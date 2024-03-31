@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import GlobalApi from "../Services/GlobalApi";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
-import "./Slider.css"
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original";
 const screenWidth = window.innerWidth;
 function Slider() {
