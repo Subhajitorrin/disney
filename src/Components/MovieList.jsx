@@ -25,8 +25,8 @@ function MovieList({ id, isVertical }) {
 
   return (
     <div className="flex gap-[1.5rem] overflow-x-auto scrollbar-hide py-[10px] px-[13px] scroll-smooth  " ref={elementRef}>
-      <MdArrowBackIosNew className="text-white ml-[-55px] z-[100] absolute text-[40px]  mt-[50px] cursor-pointer hidden md:block select-none opacity-[.2] hover:opacity-[1] transition-all duration-300 ease-in-out" onClick={()=>slideLeft()} />
-      <MdArrowForwardIos className="text-white z-[100] absolute text-[40px] mt-[50px] right-[-45px] cursor-pointer hidden md:block select-none opacity-[.2] hover:opacity-[1] transition-all duration-300 ease-in-out" onClick={()=>slideRight()} />
+      <MdArrowBackIosNew className={`text-white ml-[-55px] z-[100] absolute text-[40px] ${isVertical?'mt-[170px]':'mt-[50px]'}  cursor-pointer hidden md:block select-none opacity-[.2] hover:opacity-[1] transition-all duration-300 ease-in-out`} onClick={()=>slideLeft()} />
+      <MdArrowForwardIos className={`text-white z-[100] absolute text-[40px] ${isVertical?'mt-[170px]':'mt-[50px]'} right-[-45px] cursor-pointer hidden md:block select-none opacity-[.2] hover:opacity-[1] transition-all duration-300 ease-in-out`} onClick={()=>slideRight()} />
       {movie.map((item, index) => {
         if (!isVertical) {
           return <MovieCard title={item.title} image={item.backdrop_path} />;
