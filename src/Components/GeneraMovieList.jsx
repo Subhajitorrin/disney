@@ -9,7 +9,7 @@ function GeneraMovieList() {
             GenereList.genres.map((item,index)=>(
                 <div className="">
                     <h2 className='text-[20px] font-bold'>{item.name}</h2>
-                    <MovieList id={item.id}/>
+                    <MovieList id={item.id} isVertical={index%2!=0?true:false}/>
                 </div>
             ))
         }
